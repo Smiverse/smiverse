@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>smiverse - Style for Every Soul</title>
 <style>
-  /* COLORS */
   :root {
     --pastel1: #a8dadc;
     --pastel2: #ffe5d9;
@@ -24,20 +23,28 @@
     color: white;
     padding: 20px 10%;
     text-align: center;
+    position: relative;
   }
-  header img.logo {
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .logo-container img {
     height: 80px;
-    display: block;
-    margin: 0 auto 10px;
   }
-  header h1 {
-    display: none;
+  .logo-container span {
+    font-size: 2.8em;
+    letter-spacing: 3px;
+    color: white;
+    font-weight: bold;
   }
   header p {
     font-size: 1.2em;
     font-style: italic;
-    margin-top: 10px;
-    color: white;
+    margin-top: 5px;
+    color: var(--pastel3);
   }
   main {
     padding: 40px 10%;
@@ -142,7 +149,13 @@
     font-size: 0.9em;
   }
   @media (max-width: 600px) {
-    header h1 {
+    .logo-container {
+      flex-direction: column;
+    }
+    .logo-container img {
+      height: 60px;
+    }
+    .logo-container span {
       font-size: 2em;
     }
     main {
@@ -157,8 +170,10 @@
 <body>
 
 <header>
-  <img src="logo.png" alt="Smiverse Logo" class="logo">
-  <h1>Smiverse</h1>
+  <div class="logo-container">
+    <img src="logo.png" alt="Smiverse Logo">
+    <span>Smiverse</span>
+  </div>
   <p>Style for every soul.</p>
 </header>
 
@@ -221,4 +236,5 @@
 
 </body>
 </html>
+
 
