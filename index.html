@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>smiverse - Style for Every Soul</title>
 <style>
+  /* COLORS */
   :root {
     --pastel1: #a8dadc;
     --pastel2: #ffe5d9;
@@ -21,19 +22,22 @@
   header {
     background-color: var(--brown);
     color: white;
-    padding: 40px 10%;
+    padding: 20px 10%;
     text-align: center;
   }
-  header img {
-    height: 140px;
+  header img.logo {
+    height: 80px;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 10px;
+  }
+  header h1 {
+    display: none;
   }
   header p {
     font-size: 1.2em;
     font-style: italic;
     margin-top: 10px;
-    color: var(--pastel3);
+    color: white;
   }
   main {
     padding: 40px 10%;
@@ -138,8 +142,8 @@
     font-size: 0.9em;
   }
   @media (max-width: 600px) {
-    header img {
-      height: 100px;
+    header h1 {
+      font-size: 2em;
     }
     main {
       padding: 20px 5%;
@@ -153,7 +157,8 @@
 <body>
 
 <header>
-  <img src="logo-transparent.png" alt="Smiverse Logo" />
+  <img src="logo.png" alt="Smiverse Logo" class="logo">
+  <h1>Smiverse</h1>
   <p>Style for every soul.</p>
 </header>
 
@@ -216,3 +221,4 @@
 
 </body>
 </html>
+
