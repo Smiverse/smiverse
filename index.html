@@ -5,62 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Smiverse</title>
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #ffffff;
-    }
+    /* Navigation Styles */
+nav {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ccc;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-    header {
-      background-color: #aec6cf; /* pastel blue */
-      text-align: center;
-      padding: 40px 20px; /* moderate header height */
-      color: #4a2f1b;
-    }
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    header img {
-      width: 280px;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
+.nav-logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: #4a2f1b;
+  text-decoration: none;
+}
 
-    header h2 {
-      font-style: italic;
-      font-size: 1.5em;
-      color: #4a2f1b;
-      margin: 15px 0 0 0;
-    }
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #4a2f1b;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
 
-    section {
-      background-color: #fde7dd; /* soft peach */
-      color: #4a2f1b;
-      padding: 40px 20px;
-      text-align: center;
-    }
+.nav-links a:hover {
+  color: #ff6600;
+}
 
-    h2 {
-      color: #4a2f1b;
-      font-size: 24px;
-      border-bottom: 2px solid #4a2f1b;
-      display: inline-block;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 16px;
-      line-height: 1.6;
-      margin: 0 0 20px 0;
-    }
   </style>
 </head>
 <body>
 
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Smiverse</a>
+      <div class="nav-links">
+        <a href="#products">Products</a>
+        <a href="#buy">Buy Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
   <header>
     <img src="smiverse-logo.png" alt="Smiverse Logo">
     <h2><em>Style for every soul.</em></h2>
   </header>
 
+  <!-- About Section -->
   <section>
     <h2>About Smiverse</h2>
     <p>
@@ -70,7 +73,22 @@
     </p>
   </section>
 
+  <!-- Products Section -->
+  <section id="products">
+    <h2>Our Products</h2>
+    <p>Coming soon: a collection of wearable magic, everyday vibe-lifters & cozy drops.</p>
+  </section>
+
+  <!-- Buy Now Section -->
+  <section id="buy">
+    <h2>Buy Now</h2>
+    <p>
+      We're working on integrating with Printify/Shopify. Until then, DM us on Instagram to order ✨
+    </p>
+  </section>
+
 </body>
+
 </html>
 
 
